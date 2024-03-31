@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itechnology</title>
+    <link rel="stylesheet" href="css\index.css">
+    <link rel="icon" href="imagenes\itecnology-1.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+</head>
+<body>
+    <h1 class="titulo">Tienda Itechnology</h1> <br />
+    <h4>La mejor tienda de tecnologia</h4>
+    <br />
+    <div class="Busqueda">
+        <input type="text" placeholder="search">
+        <div class="btn">
+            <i class="fa fa-search"></i>
+        </div>
+    </div>
+    <!-- botones de registro y inicio de sesion -->
+
+    <button id="acceder" class="inicio">Login</button> <!--iniciar sesion-->
+    <button id="registrar" class="registro">sign up</button> <!--registrar -->
+    <!-- cards -->
+    <div class="contenedor">
+        <div class="card">
+            <figure>
+                <img src="imagenes\pc.png" alt="computadores">
+            </figure>
+            <div class="contenido">
+                <h3>computadores</h3>
+                <p>Puedes encontrar todo tipo de computadores y de las mejores marcas </p>
+                <a href="vscode\computadores.html" target="_blank">Ir ya</a>
+            </div>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="imagenes\componentes.jpg" alt="componentes">
+            </figure>
+            <div class="contenido">
+                <h3>componentes</h3>
+                <p>Tenemos los mejores componentes con grantia de 1 año</p>
+                <a href="vscode\computadores.html" target="_blank">Ir ya</a>
+            </div>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="imagenes\accesorios_pc.jpg" alt="accesorios">
+            </figure>
+            <div class="contenido">
+                <h3>accesorios</h3>
+                <p>Encuentra todo los accesorios para tu equipo</p>
+                <a href="vscode\computadores.html" target="_blank">Ir ya</a>
+            </div>
+        </div>
+    </div>
+    <!-- formulario sing up -->
+    <section id="forma" class="formulario">
+        <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre de usuario"> <br>
+        <input class="controls" type="email" name="coreo" id="coreo" placeholder="Ingrese gmail" required> <br>
+        <div id="errorCorreo" style="color: red;"></div> <!-- Nuevo elemento para mostrar mensaje de error -->
+        <input class="controls" type="password" name="contraseña" id="contraseña_I" placeholder="Ingrese su contraseña"> <br>
+        <input class="boton" type="submit" value="registrar">
+    </section>
+    <!-- formulario login -->
+    <section id="formulario_II" class="formulario_II">
+        <input class="controls_II" type="email" name="coreo" id="coreo_I" placeholder="Ingrese gmail" required> <br>
+        <div id="errorCorreo_II" style="color: red;"></div> <!-- Nuevo elemento para mostrar mensaje de error -->
+        <input class="controls_II" type="password" name="contraseña" id="contraseña_II" placeholder="Ingrese su contraseña"> <br>
+        <input class="boton_II" type="submit" value="Igresar">
+    </section>
+    
+    <script src="js\index.js"></script>
+</body>
+</html>
